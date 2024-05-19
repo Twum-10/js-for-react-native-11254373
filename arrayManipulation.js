@@ -1,4 +1,4 @@
- function processArray(nums){
+ export function processArray(nums){
   return nums.map(nums =>{
      if (nums % 2 === 0){
        return nums * nums;
@@ -8,7 +8,7 @@
   });
 }
 
-function formatArrayStrings(strings, nums) {
+export function formatArrayStrings(strings, nums) {
   const processedNums = processArray(nums);
   if (strings.length !== processedNums.length) {
     throw new Error("The length of both arrays must be the same.");
